@@ -12,4 +12,8 @@ The app allows students to register, take a timed quiz with randomized questions
 - **Finish Early Option** – Students can submit before time ends.
 - **Persistent Storage** – Saves responses to a `answer.txt` file.
 
-
+## Requirment for the input Questions file
+1. The input Question file should be with '.txt' extension  and should be in the following format 
+2. Gapping between question of one line.
+3. Onle must must be given in the end of all question like below line no. 124 is left blank even the question are ending with line no. 123.
+4. A Question followed by four options must be given.
