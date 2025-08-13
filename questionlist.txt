@@ -1,4 +1,9 @@
- What is the capital of France?
+## The input Question file should be with '.txt' extension  and should be in the following format 
+1. Gapping between question of one line.
+2. Onle must must be given in the end of all question like below line no. 124 is left blank even the question are ending with line no. 123.
+3. A Question followed by four options must be given.
+
+What is the capital of France?
    A. Berlin
    B. Madrid
    C. Paris 
@@ -117,4 +122,3 @@
    B. 6
    C. 7
    D. 8
-
