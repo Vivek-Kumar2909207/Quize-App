@@ -59,12 +59,12 @@ try:
             hours_box=tk.Entry(self.test_root,textvariable=self.hrs,font=("Arial",15))
             hours_box.place(x=350,y=150,height=25,width=43)
             hours_box.bind('<FocusIn>',entry_delete2)
-            # hours_box.insert(0,"00")
+            
             self.min=tk.StringVar(value="00")
             minutes_box=tk.Entry(self.test_root,textvariable=self.min,font=("Arial",15))
             minutes_box.place(x=460,y=150,height=25,width=43)
             minutes_box.bind('<FocusIn>',entry_delete3)
-            # minutes_box.insert(0,"00")
+           
             import_box=tk.Label(self.test_root,text="Select Question File:",font=("Times New Roman",20))
             import_box.place(x=150,y=250)
             selectbtn=tk.Button(self.test_root,text="Select",command=lambda:self.loadquestionfile(),bg="light blue",font=("Times New Roman",20))
@@ -145,11 +145,11 @@ try:
         def start_Quize(self,title):
             self.root=tk.Tk() 
             self.root.title(title)
-            # self.root.configure(bg="#E0F5E2")
-            # self.root.attributes("-fullscreen", True)       # Fullscreen
-            # self.root.attributes("-topmost", True)           # Always on top
-            # self.root.bind("<Escape>", lambda e: None)       # Disable ESC exit
-            # self.root.protocol("WM_DELETE_WINDOW", lambda: None)  # Disable close button
+            self.root.configure(bg="#E0F5E2")
+            self.root.attributes("-fullscreen", True)       # Fullscreen
+            self.root.attributes("-topmost", True)           # Always on top
+            self.root.bind("<Escape>", lambda e: None)       # Disable ESC exit
+            self.root.protocol("WM_DELETE_WINDOW", lambda: None)  # Disable close button
             screen_width=self.root.winfo_screenwidth()  
             screen_height=self.root.winfo_screenheight()
             adjusted_screen_width= (screen_width // 2) - (screen_width // 2)
@@ -290,3 +290,4 @@ try:
         quiz.test_details()
 except Exception as e:
     print(f" an error occured {e}")
+
